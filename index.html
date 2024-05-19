@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halı Saha</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="ground">
+      <!-- Players -->
+        <div class="player red" id="player1"><p></p></div>
+        <div class="player red" id="player2"><p></p></div>
+        <div class="player red" id="player3"><p></p></div>
+        <div class="player red" id="player4"><p></p></div>
+        <div class="player red" id="player5"><p></p></div>
+        <div class="player red" id="player6"><p></p></div>
+        <div class="player blue" id="player7"><p></p></div>
+        <div class="player blue" id="player8"><p></p></div>
+        <div class="player blue" id="player9"><p></p></div>
+        <div class="player blue" id="player10"><p></p></div>
+        <div class="player blue" id="player11"><p></p></div>
+        <div class="player blue" id="player12"><p></p></div>
+    </div>
+     <!-- Button to swap players -->
+     <button class="swapPlayers" onclick="swapPlayers()">Karıştır </button>
+     <button class="addPlayers"  onclick="showAddPlayersModal()">Oyuncu Ekle</button>
+     <button class="deletePlayers"  onclick="deletePlayers()">Tüm Oyuncuları Sil</button>
+
+     <!-- Modal -->
+    <div id="addPlayersModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAddPlayersModal()">&times;</span>
+            <h2 class="playerNameEnter">Oyuncu Adlarını Girin</h2>
+            <form id="addPlayersForm">
+                <div id="playerInputs"></div>
+                <button type="button" onclick="submitPlayerNames()">Kaydet</button>
+            </form>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+</body>
+</html>

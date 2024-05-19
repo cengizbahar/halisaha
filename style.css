@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    font-family: open-sans, sans-serif;
+}
+
+.ground {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(saha.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.player {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: url(player.png)no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.blue {
+    background: url(blue.png)no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.player p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 110px;
+    
+}
+
+
+/* Example positions for the players */
+#player1 { top: 43%; left: 5%; }
+#player2 { top: 20%; left: 30%;}
+#player3 {top: 70%; left: 30%;}
+#player4 {top: 47%;left: 40%;}
+#player5 {top: 20%;left: 60%;}
+#player6 {top: 70%;left: 60%;}
+#player7 {top: 43%;left: 92%;}
+#player8 {top: 20%;left: 70%;}
+#player9 {top: 70%;left: 70%;}
+#player10 {top: 47%;left: 55%;}
+#player11 {top: 70%;left: 40%;}
+#player12 {top:20%;left: 40%;}
+
+
+
+.swapPlayers {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #333;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: 40px;
+    right: 40px;
+    border: none;
+   
+}
+.addPlayers, .deletePlayers, .takePhoto {
+    position: absolute;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    bottom: 40px;
+    right: 250px;
+    border: none;
+}
+.deletePlayers {
+    bottom: 40px;
+    right: 450px;
+}
+.takePhoto {
+    bottom: 40px;
+    left: 100px;
+    width: 180px;
+    background-color: grey;
+}
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addPlayersForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#addPlayersForm input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+#addPlayersForm button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+   width:300px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 50px;
+   
+}
+.playerNameEnter {
+    font-size: 20px;
+}
